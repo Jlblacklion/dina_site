@@ -14,16 +14,16 @@ header{
 }
 .menu ul{
   font-size: 1em;
-  list-style: none; /*Tira os pontos de lista */
+  list-style: none; 
   font-family: 'Raleway', sans-serif;
 }
 .menu ul li{
   display: inline;
 }
 .menu ul li a {
-  padding: 10px 25px; /* Distância entre os elementos do Menu*/
-  display: inline-block; /* Manter em posição em Linha como Blocos */
-  text-decoration: none; /* Deixa sem as linhas de link de baixo*/
+  padding: 10px 25px; 
+  display: inline-block; 
+  text-decoration: none; 
   color: #ffffff;
 }
 
@@ -39,7 +39,7 @@ header{
   justify-content: space-evenly;
   padding-top: 50px;
 }
-.itens .sub-itens a {
+.titulo a .itens .sub-itens a {
   text-decoration: none;
 }
 #sub-iten {
@@ -69,19 +69,22 @@ header{
   opacity: 0.70;
 }
 
-.redondo{
+/* .redondo{
   display: flex;
-  justify-content: space-between;
-}
-.redondo1{
- 
-}
-.redondo2{
-  border-radius: 50%;
-  height: 25%;
-  width: 20%;
-  background-color: rgb(241, 129, 144);
-}
+  flex-wrap: wrap;
+  max-width: 800px;
+  }
+  .redondo1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .redondo2{
+    flex: 1 1 50px;
+    border-radius: 50%;
+    background-color: #ccc7c7;
+    height: 25%;
+    width: 20%;  
+  } */
 
 .imagens{
   display: flex;
@@ -124,4 +127,57 @@ header{
 
 #rodape {
   background-color: #ccc7c7;
+}
+
+/* Contato  */
+
+.formulario{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.contato {
+  color:  #e95e5e;
+  font-family: 'Libre Baskerville', serif;
+}
+.contato a {
+  text-decoration: none;
+  color:  #e95e5e;
+  font-family: 'Libre Baskerville', serif;
+}
+.do-formulario{
+  margin-top: 20px;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-form input{
+  width: 350px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 5px;
+}
+textarea{
+  height: 130px;
+  width: 720px;
+  padding: 8px;
+  
+}
+.input-form #enviar{
+  background-color: #e95e5e;
+  height: 55px;
+  width: 250px;
+  margin: 0;
+  margin-top: 20px;
+  border-style: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
 }
