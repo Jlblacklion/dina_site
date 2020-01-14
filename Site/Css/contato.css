@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300i&display=swap');
+body{
+  opacity: 0.80;
+  background-color: #ececec;
+  /* background-image: url(Img/SEO.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+   */
+}
+
+.titulo {
+  color:  #e95e5e;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 20px;
+}
+.titulo > a {
+  text-decoration: none;
+  color:  #e95e5e;
+  font-weight: bold;
+}
+
+.texto1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.formulario{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.do-formulario{
+  margin-top: 20px;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-form input{
+  width: 350px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 5px;
+}
+textarea{
+  height: 130px;
+  width: 720px;
+  padding: 8px;
+  
+}
+.input-form #enviar{
+  background-color: #e95e5e;
+  height: 55px;
+  width: 250px;
+  margin: 0;
+  margin-top: 20px;
+  border-style: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
