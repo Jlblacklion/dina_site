@@ -47,7 +47,7 @@ header{
   padding: 5px;
 }
 
- .titulo{
+ .titulo {
    font-size: 2em;
    text-align: center;
    padding-top: 20px;
@@ -99,6 +99,38 @@ header{
 }
 
 
-#rodape {
+.rodape {
   background-color: #ccc7c7;
+  height: 350px;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.titulo-rodape{
+  font-size: 1.5rem;
+  color: #9c327e;
+}
+.dorodape{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.dorodape ul li{
+  display: inline-block; 
+  padding: 10px;
+}
+.dorodape ul li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-media img{
+  height: 40px;
+  padding: 10px;
+}
+.social-media{
+  text-decoration: none;
+}
+.Copyrigth{
+  text-align: center;
+  margin-top: 80px;
 }
