@@ -1,10 +1,14 @@
 /* Importando a fonte  */
-@import url('https://fonts.googleapis.com/css?family=Raleway:300i&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:300i&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Anton|Oswald:500,700&display=swap'); */
 body{
   margin: 0;
   padding: 0; 
+  font-family: 'Century Gothic W01', sans-serif; 
+  font-family: 'Questrial', sans-serif;
 }
 header{
+  flex-wrap: wrap;
   height:350px;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
@@ -15,7 +19,6 @@ header{
 .menu ul{
   font-size: 1em;
   list-style: none; 
-  font-family: 'Raleway', sans-serif;
 }
 .menu ul li{
   display: inline;
@@ -24,113 +27,262 @@ header{
   padding: 10px 25px; 
   display: inline-block; 
   text-decoration: none; 
-  color: #ffffff;
+  color: #000;
+  text-transform: uppercase;
+  opacity: 80%;
+  font-size:small;
 }
 
 .menu ul li a:hover{
-  color: rgb(0, 0, 0);
+  color: hsl(317, 67%, 76%);
 }
 
 .itens{
   display: flex;
   color:rgb(0, 0, 0);
-  font-family: 'Raleway', sans-serif;
   font-size: 3em;
   justify-content: space-evenly;
   padding-top: 50px;
 }
 .itens .sub-itens a {
   text-decoration: none;
+  color: #000;
+}
+/* Animation */
+@keyframes sub_itens{
+  from{left: 0px; top: 0px;}
+  to{left: 0px; top: 80px;}
 }
 #sub-iten {
-  border: 2px solid rgb(255, 255, 255);
-  padding: 5px;
+  position: relative;
+  border: 4px solid rgb(255, 255, 255);
+  padding: 10px;
+  top: 50px;
+  animation-name: sub_itens;
+  animation-duration: 2s;
+}
+.itens .sub-itens a:hover{
+  color: hsl(317, 67%, 76%);
 }
 
+/* As 3 Divs de introdução */
+.introcucao{
+  margin-top: 180px;
+  display: flex;
+  justify-content: center; 
+}
+.apresentacao1{
+  height: 600px;
+  width: 330px;
+  margin-left: 30px;
+  text-align: center;
+  background-color: #fdc9ef;
+}
+.apresentacao1 img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+  margin-top: -50px;
+}
+.ts1{
+  font-size: 1.75em;
+  padding-top: 15px;
+  font-family: 'Simonetta',serif ;
+}
+.ts2{
+  margin-top: 50px;
+  padding: 25px;
+  font-family: 'Open Sans',serif ;
+  letter-spacing: 1px;
+}
+#bts1 {
+  padding: 20px;
+  width: 200px;
+  text-transform: uppercase;
+  border: 2px solid rgb(255, 255, 255);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  color: #000;
+}
+.apresentacao1 a, #bts1{
+  text-decoration: none;
+}
+.apresentacao1 #bts1:hover{
+  color: #fbc2eb;
+  background-color: #361f1b;
+}
+
+
+
+/* Primeiros titulos */
  .titulo {
    font-size: 2em;
    text-align: center;
    padding-top: 20px;
  }
  .texto1{
-   font-size: 1.50rem;
-   opacity: 0.80;
-   text-align: center;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-align: center;
  }
  
-/* Divs arredondadas */
+/* Aplicando Flexbox 
+  flex-direction: ; row, colum, colum-reverse, row-reverse 
+  flex-wrap: nowrap;  wrap, nowrap, wrap-reverse 
+  max-width: 100%;
+  align-items: ; /*space-arround, center, strech, baseline
+  justify-content: ; c, flex-end, space-arround, space-between  
+  height: 750px;
+  width: 100%;  */   
 
-.imagens{
+.div_centro{
   display: flex;
-  margin: 0;
-  background-image: linear-gradient(120deg, #d3bebe 0%, hsl(0, 14%, 73%) 100%);  
-  height: 450px;
-}
-
-.texto-imagens{
-  text-align: center;
-  height: 440px;
-  width: 30%;
+  background: #fcf3f0;
   margin: auto;
+  justify-self: start;
 }
-
 .foto{
-  margin: auto;
-  border-radius: 20px 20px 20px 20px;
-  height: 80%;
-  width: 80%;
-}
-.texto-transparente{
-  margin-top: -39%;
+  display: flex;
+  width: 1000px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-top: 10px;
   text-align: center;
-  border-radius: 20px 20px 20px 20px;
-  background: rgb(255, 234, 254);
-  opacity: 0.75;
-  height: 25%;
-  margin-left: 41px;
-  width: 80%;
-  font-size: 1em;
-  font-family: 'Raleway', sans-serif;
-  padding-top: 10px;
-  color: rgb(0, 0, 0);
 }
-.texto-transparente a {
-  text-decoration: none; 
+.imagens a, .t1{
+  color: #000;
+  text-decoration: none;
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
 }
 
+.imagens a, .t1:hover{
+  color: hsl(317, 67%, 76%);
+}
+.imagens a, .t2{
+  color: hsl(317, 67%, 76%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Anton', serif;
+  /* text-shadow: 4px 4px 4px #aaa; */
+}
+.imag{
+  height: 246px;
+  width: 246px;
+  margin: 2px;
+}
+.publicidade{
+  background-color: rgb(68, 57, 57);
+  height: auto;
+  width: 170px;
+  margin-left: 40px;
+  text-align: center;
+}
+/* Social Media*/
+.social-media{
+  position: fixed;
+  width: 250px;
+  height: 100px;
+  left: 10%;
+  margin-left: -125px;
+  top: 50%;
+  margin-top:-50px;
+            
+}
+.social-media > a{
+  display: flex;
+  text-decoration: none;
+}
+i{
+  flex-direction: column;
+  color: #534e4c; 
+  padding: 10px;
+  font-size: 20px;
+}
 
-.rodape {
-  background-color: #ccc7c7;
-  height: 350px;
+/* Do Slide */
+.carrossel_index{
+  margin: 0;
+  height: 600px;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
 }
-.titulo-rodape{
-  font-size: 1.5rem;
-  color: #9c327e;
+#slide1{
+  height: 600px;
+  width: 100%;
+}
+
+/* Criando as divs de apresentação2 */
+.introcucao2{
+  width: 900px;
+  height: auto;
+  margin-top: 180px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: center; 
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.apresentacao2{
+  height: 300px;
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.apresentacao-img img{
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.apresentacao-img1 img{
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: -100px;
+}
+.ts1r{
+  font-size: 1.75em;
+  padding-top: 15px;
+  font-family: 'Simonetta',serif ;
+  
+}
+.ts2r{
+  margin-top: 50px;
+  font-family: 'Open Sans',serif ;
+  letter-spacing: 1px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color:  #fdc9ef;
+  height: 100px;
+  width: 100%;
 }
 .dorodape{
   align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row-reverse;
 }
 .dorodape ul li{
   display: inline-block; 
-  padding: 10px;
+  padding: 30px;
 }
-.dorodape ul li a {
+.dorodape ul  li a, .whats{
   list-style: none;
   text-decoration: none;
+  color: #000;
+}
+.dorodape ul  li a:hover{
+  color: hsl(317, 67%, 76%);
 }
 
-.social-media img{
-  height: 40px;
-  padding: 10px;
-}
-.social-media{
-  text-decoration: none;
-}
-.Copyrigth{
-  text-align: center;
-  margin-top: 80px;
-}

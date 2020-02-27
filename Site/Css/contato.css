@@ -63,6 +63,7 @@ textarea{
   margin: 0;
   margin-top: 20px;
   border-style: none;
+  font-size: 1rem;
 }
 
 input[type=text]:focus {
